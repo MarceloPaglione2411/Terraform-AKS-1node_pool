@@ -29,11 +29,7 @@ sudo mv kubectl /usr/local/bin/
 
 # Configurando Acesso ao Cluster AKS
 # 1. Obtenha as credenciais do cluster
-Use o Azure CLI para baixar o kubeconfig:
-
-az aks get-credentials --resource-group <nome-do-resource-group> --name <nome-do-cluster-aks>
+Use o Azure CLI para baixar o kubeconfig:   az aks get-credentials --resource-group rg-aks --name aks-cluster
 
 # 2. Teste o acesso
-Liste os nós do cluster para confirmar a conexão:
-
-kubectl get nodes
+Liste os nós do cluster para confirmar a conexão:   kubectl get nodes
